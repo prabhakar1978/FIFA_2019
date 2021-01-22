@@ -9,3 +9,5 @@ library(readxl)
 data_file = "FIFA 2019 Player Stats.xlsx"
 
 FIFA = readxl::read_excel(path = data_file, sheet = "data")
+
+head(FIFA)
