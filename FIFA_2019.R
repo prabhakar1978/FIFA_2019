@@ -16,3 +16,5 @@ FIFA = FIFA %>% clean_names(case = "upper_camel")
 head(FIFA)
 
 str(FIFA)
+
+#Added comment to test git 1
