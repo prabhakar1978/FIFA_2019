@@ -5,9 +5,14 @@
 
 library(tidyverse)
 library(readxl)
+library(janitor)
 
 data_file = "FIFA 2019 Player Stats.xlsx"
 
 FIFA = readxl::read_excel(path = data_file, sheet = "data")
 
+FIFA = FIFA %>% clean_names(case = "upper_camel")
+
 head(FIFA)
+
+str(FIFA)
